@@ -1,0 +1,2142 @@
+@import url('https://fonts.googleapis.com/css2?family=Aclonica&family=Akaya+Kanadaka&family=Asset&family=Birthstone&family=Changa+One:ital@0;1&family=Chango&family=Eagle+Lake&family=Fascinate+Inline&family=Kaushan+Script&family=Lavishly+Yours&family=Lilita+One&family=Lugrasimo&family=Macondo&family=Monsieur+La+Doulaise&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Oleo+Script:wght@400;700&family=Passion+One:wght@400;700;900&family=Passions+Conflict&family=Quicksand:wght@300..700&family=Rubik+Moonrocks&family=Rubik+Wet+Paint&family=Titan+One&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Aclonica&family=Akaya+Kanadaka&family=Asset&family=Birthstone&family=Changa+One:ital@0;1&family=Chango&family=Eagle+Lake&family=Fascinate+Inline&family=Kaushan+Script&family=Lavishly+Yours&family=Leckerli+One&family=Lilita+One&family=Lugrasimo&family=Macondo&family=Monsieur+La+Doulaise&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Oleo+Script:wght@400;700&family=Passion+One:wght@400;700;900&family=Passions+Conflict&family=Quicksand:wght@300..700&family=Rubik+Distressed&family=Rubik+Moonrocks&family=Rubik+Wet+Paint&family=Titan+One&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+#main{
+    font-family: "Quicksand", serif;
+    background-color: rgb(255, 255, 255);
+    height: 100vh;
+    width: 100vw;
+}
+
+#nav{
+    /* border: 4px solid chartreuse; */
+    background: linear-gradient( 73.1deg,  rgba(34,126,34,1) 8%, rgba(99,162,17,1) 86.9% );
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    top: 0px;
+    width: 100vw;
+    padding: 30px 20px;
+    box-shadow: 0px 0px 50px 50px white;
+    z-index: 9999;
+}
+
+#logo{
+    /* border: 2px solid blue; */
+    font-family: "Rubik Distressed", serif;
+    color: white;
+    font-size: 45px;
+    rotate: 352deg;
+    margin-left: 30px;
+}
+
+#srch{
+    /* border: 2px solid olive; */
+    background-color: rgb(212, 212, 212);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    border-radius: 100px;
+    margin-right: 430px;
+}
+
+#srch input{
+    font-family: "Quicksand", serif;
+    border: 2px solid orange;
+    background-color: rgb(212, 212, 212);
+    padding: 5px;
+    width: 600px;
+    font-size: 20px;
+    border: none;
+    border-radius: 100px;
+    padding-left: 20px;
+}
+
+#srch input:focus{
+    outline: none;
+}
+
+#srch span{
+    border: none;
+    background: linear-gradient( 73.1deg,  rgba(34,126,34,1) 8%, rgba(99,162,17,1) 86.9% );
+    color: white;
+    padding: 8px;
+    font-size: 25px;
+    border-radius: 100px;
+    font-weight: bold;
+    transition: 1.0s;
+}
+
+#srch span:hover{
+    background: linear-gradient( 73.1deg, rgba(99,162,17,1), rgba(34,126,34,1));
+    cursor: pointer;
+    transform: scale(1.1);
+    box-shadow: 0px 0px 10px 0px;
+}
+
+#r{
+    /* border: 2px solid purple; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    padding: 10px;
+    width: 300px;
+    position: absolute;
+    right: 20px;
+}
+
+#r #sin{
+    /* border: 2px solid pink; */
+    padding: 15px;
+    font-size: 20px;
+    margin-right: 0px;
+    width: 150px;
+    text-align: center;
+    border-radius: 50px;
+}
+
+#r #sin a{
+    color: #282828;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    transition: 0.9s;
+}
+
+#r #sin a:hover{
+    color: white;
+}
+
+#r #log{    
+    /* border: 2px solid orangered; */
+    background-color: #282828;
+    padding: 15px;
+    font-size: 20px;
+    margin-left: 0px;
+    width: 150px;
+    text-align: center;
+    border-radius: 50px;
+    transition: 0.9s;
+}
+
+#r #log:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+    box-shadow: 0px 0px 10px 5px white;
+}
+
+#r #log a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#c0{
+    /* border: 2px solid green; */
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#c1{
+    /* border: 2px solid blue; */
+    background-color: rgb(232, 232, 232);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0px 0px 10px 0px;
+    border-top-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+    box-shadow: 0px 0px 10px 0px black;
+    width: 831px;
+    margin: 50px 0px;
+}
+
+.d1{
+    border: none;
+    background: linear-gradient( 73.1deg,  rgba(34,126,34,1) 8%, rgba(99,162,17,1) 86.9% );
+    color: white;
+    margin: 0px 0px 40px 0px;
+    padding: 10px 180px;
+    border-top-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+
+.d1 h1{
+    /* border: 2px solid aqua; */
+    font-size: 40px;
+}
+
+.d2{
+    /* border: 2px solid yellow; */
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 20px 0px;
+}
+
+.d2 span{
+    /* border: 2px solid greenyellow; */
+    font-size: 20px;
+    margin: 20px 0px 0px 0px;
+    font-weight: bold;
+    padding: 0px 0px;
+}
+
+.d2 span a{
+    color: rgba(99,162,17,1);
+    text-decoration: none;
+
+}
+
+#c2{
+    /* border: 4px solid purple; */
+    background: linear-gradient( 73.1deg,  rgba(34,126,34,1) 8%, rgba(99,162,17,1) 86.9% );
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100vw;
+    padding-top: 35px;
+    padding-bottom: 10px;
+}
+
+#r1{
+    /* border: 2px solid blue; */
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: row;
+    width: 100vw;
+    padding: 0px 0px 35px 0px;
+}
+
+#r1 #b1{
+    /* border: 2px solid black; */
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px 0px white;
+    transition: 0.9s;
+}
+
+#r1 #b1:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+    box-shadow: 0px 0px 20px 0px white;
+}
+
+#r1 #b1 #data1{
+    /* border: 2px solid red;   */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;  
+}
+
+#r1 #b1 #data1 img{
+    /* border: 2px solid aqua; */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 230px;
+    width: 330px;
+    border-radius: 20px 20px 0px 0px;
+}
+
+#r1 #b1 #data2{
+    /* border: 2px solid green; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    padding: 5px 0px;
+}
+
+#r1 #b1 #data2 .name{
+    /* border: 2px solid blue; */
+    font-size: 20px;
+    margin: 0px 0px 0px 10px;
+}
+
+#r1 #b1 #data2 .like{
+    /* border: 2px solid yellow; */
+    margin: 0px 10px 0px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+}
+
+#r1 #b2{
+    /* border: 2px solid red;   */
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px 0px white;
+    transition: 0.9s;
+}
+
+#r1 #b2:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+    box-shadow: 0px 0px 20px 0px white;
+}
+
+#r1 #b2 #data1{
+    /* border: 2px solid black;   */
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+}
+
+#r1 #b2 #data1 img{
+    /* border: 2px solid aqua; */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 230px;
+    width: 330px;
+    border-radius: 20px 20px 0px 0px;
+}
+
+#r1 #b2 #data2{
+    /* border: 2px solid green; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    padding: 5px 0px;
+}
+
+#r1 #b2 #data2 .name{
+    /* border: 2px solid blue; */
+    font-size: 20px;
+    margin: 0px 0px 0px 10px;
+}
+
+#r1 #b2 #data2 .like{
+    /* border: 2px solid yellow; */
+    margin: 0px 10px 0px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+}
+
+#r1 #b3{
+    /* border: 2px solid olive;     */
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px 0px white;
+    transition: 0.9s;
+}
+
+#r1 #b3:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+    box-shadow: 0px 0px 20px 0px white;
+}
+
+#r1 #b3 #data1{
+    /* border: 2px solid black;   */
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+}
+
+#r1 #b3 #data1 img{
+    /* border: 2px solid aqua; */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 230px;
+    width: 330px;
+    border-radius: 20px 20px 0px 0px;
+}
+
+#r1 #b3 #data2{
+    /* border: 2px solid green; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    padding: 5px 0px;
+}
+
+#r1 #b3 #data2 .name{
+    /* border: 2px solid blue; */
+    font-size: 20px;
+    margin: 0px 0px 0px 10px;
+}
+
+#r1 #b3 #data2 .like{
+    /* border: 2px solid yellow; */
+    margin: 0px 10px 0px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+}
+
+#r1 #b4{
+    /* border: 2px solid lawngreen;   */
+    background-color: white;
+    border-radius: 20px;  
+    box-shadow: 0px 0px 10px 0px white;
+    transition: 0.9s;
+}
+
+#r1 #b4:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+    box-shadow: 0px 0px 20px 0px white;
+}
+
+#r1 #b4 #data1{
+    /* border: 2px solid black;   */
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+}
+
+#r1 #b4 #data1 img{
+    /* border: 2px solid aqua; */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 230px;
+    width: 330px;
+    border-radius: 20px 20px 0px 0px;
+}
+
+#r1 #b4 #data2{
+    /* border: 2px solid green; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    padding: 5px 0px;
+}
+
+#r1 #b4 #data2 .name{
+    /* border: 2px solid blue; */
+    font-size: 20px;
+    margin: 0px 0px 0px 10px;
+}
+
+#r1 #b4 #data2 .like{
+    /* border: 2px solid yellow; */
+    margin: 0px 10px 0px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+}
+
+#r2{
+    /* border: 2px solid green; */
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: row;
+    width: 100vw;
+    padding: 0px 0px 35px 0px;
+}
+
+#r2 #b1{
+    /* border: 2px solid black; */
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px 0px white;
+    transition: 0.9s;
+}
+
+#r2 #b1:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+    box-shadow: 0px 0px 20px 0px white;
+}
+
+#r2 #b1 #data1{
+    /* border: 2px solid red;   */
+    display: flex;
+    justify-content: center;
+    align-items: center;     
+}
+
+#r2 #b1 #data1 img{
+    /* border: 2px solid aqua; */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 230px;
+    width: 330px;
+    border-radius: 20px 20px 0px 0px;
+}
+
+#r2 #b1 #data2{
+    /* border: 2px solid green; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    padding: 5px 0px;
+}
+
+#r2 #b1 #data2 .name{
+    /* border: 2px solid blue; */
+    font-size: 20px;
+    margin: 0px 0px 0px 10px;
+}
+
+#r2 #b1 #data2 .like{
+    /* border: 2px solid yellow; */
+    margin: 0px 10px 0px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+}
+
+#r2 #b2{
+    /* border: 2px solid red;   */
+    background-color: white;
+    border-radius: 20px;  
+    box-shadow: 0px 0px 10px 0px white;
+    transition: 0.9s;
+}
+
+#r2 #b2:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+    box-shadow: 0px 0px 20px 0px white;
+}
+
+#r2 #b2 #data1{
+    /* border: 2px solid black;   */
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+}
+
+#r2 #b2 #data1 img{
+    /* border: 2px solid aqua; */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 230px;
+    width: 330px;
+    border-radius: 20px 20px 0px 0px;
+}
+
+#r2 #b2 #data2{
+    /* border: 2px solid green; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    padding: 5px 0px;
+}
+
+#r2 #b2 #data2 .name{
+    /* border: 2px solid blue; */
+    font-size: 20px;
+    margin: 0px 0px 0px 10px;
+}
+
+#r2 #b2 #data2 .like{
+    /* border: 2px solid yellow; */
+    margin: 0px 10px 0px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+}
+
+#r2 #b3{
+    /* border: 2px solid olive;  */
+    background-color: white;
+    border-radius: 20px;   
+    box-shadow: 0px 0px 10px 0px white;
+    transition: 0.9s;
+}
+
+#r2 #b3:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+    box-shadow: 0px 0px 20px 0px white;
+}
+
+#r2 #b3 #data1{
+    /* border: 2px solid black;   */
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+}
+
+#r2 #b3 #data1 img{
+    /* border: 2px solid aqua; */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 230px;
+    width: 330px;
+    border-radius: 20px 20px 0px 0px;
+}
+
+#r2 #b3 #data2{
+    /* border: 2px solid green; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    padding: 5px 0px;
+}
+
+#r2 #b3 #data2 .name{
+    /* border: 2px solid blue; */
+    font-size: 20px;
+    margin: 0px 0px 0px 10px;
+}
+
+#r2 #b3 #data2 .like{
+    /* border: 2px solid yellow; */
+    margin: 0px 10px 0px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+}
+
+#r2 #b4{
+    /* border: 2px solid lawngreen;  */
+    background-color: white;
+    border-radius: 20px;   
+    box-shadow: 0px 0px 10px 0px white;
+    transition: 0.9s;
+}
+
+#r2 #b4:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+    box-shadow: 0px 0px 20px 0px white;
+}
+
+#r2 #b4 #data1{
+    /* border: 2px solid black;   */
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+}
+
+#r2 #b4 #data1 img{
+    /* border: 2px solid aqua; */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 230px;
+    width: 330px;
+    border-radius: 20px 20px 0px 0px;
+}
+
+#r2 #b4 #data2{
+    /* border: 2px solid green; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    padding: 5px 0px;
+}
+
+#r2 #b4 #data2 .name{
+    /* border: 2px solid blue; */
+    font-size: 20px;
+    margin: 0px 0px 0px 10px;
+}
+
+#r2 #b4 #data2 .like{
+    /* border: 2px solid yellow; */
+    margin: 0px 10px 0px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+}
+
+#r3{
+    /* border: 2px solid yellow; */
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: row;
+    width: 100vw;
+    padding: 0px 0px 35px 0px;
+}
+
+#r3 #b1{
+    /* border: 2px solid black; */
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px 0px white;
+    transition: 0.9s;
+}
+
+#r3 #b1:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+    box-shadow: 0px 0px 20px 0px white;
+}
+
+#r3 #b1 #data1{
+    /* border: 2px solid red;    */
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+}
+
+#r3 #b1 #data1 img{
+    /* border: 2px solid aqua; */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 230px;
+    width: 330px;
+    border-radius: 20px 20px 0px 0px;
+}
+
+#r3 #b1 #data2{
+    /* border: 2px solid green; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    padding: 5px 0px;
+}
+
+#r3 #b1 #data2 .name{
+    /* border: 2px solid blue; */
+    font-size: 20px;
+    margin: 0px 0px 0px 10px;
+}
+
+#r3 #b1 #data2 .like{
+    /* border: 2px solid yellow; */
+    margin: 0px 10px 0px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+}
+
+#r3 #b2{
+    /* border: 2px solid red;   */
+    background-color: white;
+    border-radius: 20px;  
+    box-shadow: 0px 0px 10px 0px white;
+    transition: 0.9s;
+}
+
+#r3 #b2:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+    box-shadow: 0px 0px 20px 0px white;
+}
+
+#r3 #b2 #data1{
+    /* border: 2px solid black;   */
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+}
+
+#r3 #b2 #data1 img{
+    /* border: 2px solid aqua; */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 230px;
+    width: 330px;
+    border-radius: 20px 20px 0px 0px;
+}
+
+#r3 #b2 #data2{
+    /* border: 2px solid green; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    padding: 5px 0px;
+}
+
+#r3 #b2 #data2 .name{
+    /* border: 2px solid blue; */
+    font-size: 20px;
+    margin: 0px 0px 0px 10px;
+}
+
+#r3 #b2 #data2 .like{
+    /* border: 2px solid yellow; */
+    margin: 0px 10px 0px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+}
+
+#r3 #b3{
+    /* border: 2px solid olive;    */
+    background-color: white;
+    border-radius: 20px; 
+    box-shadow: 0px 0px 10px 0px white;
+    transition: 0.9s;
+}
+
+#r3 #b3:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+    box-shadow: 0px 0px 20px 0px white;
+}
+
+#r3 #b3 #data1{
+    /* border: 2px solid black;   */
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+}
+
+#r3 #b3 #data1 img{
+    /* border: 2px solid aqua; */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 230px;
+    width: 330px;
+    border-radius: 20px 20px 0px 0px;
+}
+
+#r3 #b3 #data2{
+    /* border: 2px solid green; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    padding: 5px 0px;
+}
+
+#r3 #b3 #data2 .name{
+    /* border: 2px solid blue; */
+    font-size: 20px;
+    margin: 0px 0px 0px 10px;
+}
+
+#r3 #b3 #data2 .like{
+    /* border: 2px solid yellow; */
+    margin: 0px 10px 0px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+}
+
+#r3 #b4{
+    /* border: 2px solid lawngreen;  */
+    background-color: white;
+    border-radius: 20px;   
+    box-shadow: 0px 0px 10px 0px white;
+    transition: 0.9s;
+}
+
+#r3 #b4:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+    box-shadow: 0px 0px 20px 0px white;
+}
+
+#r3 #b4 #data1{
+    /* border: 2px solid black;   */
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+}
+
+#r3 #b4 #data1 img{
+    /* border: 2px solid aqua; */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 230px;
+    width: 330px;
+    border-radius: 20px 20px 0px 0px;
+}
+
+#r3 #b4 #data2{
+    /* border: 2px solid green; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    padding: 5px 0px;
+}
+
+#r3 #b4 #data2 .name{
+    /* border: 2px solid blue; */
+    font-size: 20px;
+    margin: 0px 0px 0px 10px;
+}
+
+#r3 #b4 #data2 .like{
+    /* border: 2px solid yellow; */
+    margin: 0px 10px 0px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+}
+
+#r4{
+    /* border: 2px solid yellowgreen; */
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: row;
+    width: 100vw;
+    padding: 0px 0px 35px 0px;
+} 
+
+#r4 #b1{
+    /* border: 2px solid black; */
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px 0px white;
+    transition: 0.9s;
+}
+
+#r4 #b1:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+    box-shadow: 0px 0px 20px 0px white;
+}
+
+#r4 #b1 #data1{
+    /* border: 2px solid red;    */
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+}
+
+#r4 #b1 #data1 img{
+    /* border: 2px solid aqua; */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 230px;
+    width: 330px;
+    border-radius: 20px 20px 0px 0px;
+}
+
+#r4 #b1 #data2{
+    /* border: 2px solid green; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    padding: 5px 0px;
+}
+
+#r4 #b1 #data2 .name{
+    /* border: 2px solid blue; */
+    font-size: 20px;
+    margin: 0px 0px 0px 10px;
+}
+
+#r4 #b1 #data2 .like{
+    /* border: 2px solid yellow; */
+    margin: 0px 10px 0px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+}
+
+#r4 #b2{
+    /* border: 2px solid red;    */
+    background-color: white;
+    border-radius: 20px; 
+    box-shadow: 0px 0px 10px 0px white;
+    transition: 0.9s;
+}
+
+#r4 #b2:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+    box-shadow: 0px 0px 20px 0px white;
+}
+
+#r4 #b2 #data1{
+    /* border: 2px solid black;   */
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+}
+
+#r4 #b2 #data1 img{
+    /* border: 2px solid aqua; */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 230px;
+    width: 330px;
+    border-radius: 20px 20px 0px 0px;
+}
+
+#r4 #b2 #data2{
+    /* border: 2px solid green; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    padding: 5px 0px;
+}
+
+#r4 #b2 #data2 .name{
+    /* border: 2px solid blue; */
+    font-size: 20px;
+    margin: 0px 0px 0px 10px;
+}
+
+#r4 #b2 #data2 .like{
+    /* border: 2px solid yellow; */
+    margin: 0px 10px 0px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+}
+
+#r4 #b3{
+    /* border: 2px solid olive;    */
+    background-color: white;
+    border-radius: 20px; 
+    box-shadow: 0px 0px 10px 0px white;
+    transition: 0.9s;
+}
+
+#r4 #b3:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+    box-shadow: 0px 0px 20px 0px white;
+}
+
+#r4 #b3 #data1{
+    /* border: 2px solid black;   */
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+}
+
+#r4 #b3 #data1 img{
+    /* border: 2px solid aqua; */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 230px;
+    width: 330px;
+    border-radius: 20px 20px 0px 0px;
+}
+
+#r4 #b3 #data2{
+    /* border: 2px solid green; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    padding: 5px 0px;
+}
+
+#r4 #b3 #data2 .name{
+    /* border: 2px solid blue; */
+    font-size: 20px;
+    margin: 0px 0px 0px 10px;
+}
+
+#r4 #b3 #data2 .like{
+    /* border: 2px solid yellow; */
+    margin: 0px 10px 0px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+}
+
+#r4 #b4{
+    /* border: 2px solid lawngreen;  */
+    background-color: white;
+    border-radius: 20px;   
+    box-shadow: 0px 0px 10px 0px white;
+    transition: 0.9s;
+}
+
+#r4 #b4:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+    box-shadow: 0px 0px 20px 0px white;
+}
+
+#r4 #b4 #data1{
+    /* border: 2px solid black;   */
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+}
+
+#r4 #b4 #data1 img{
+    /* border: 2px solid aqua; */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 230px;
+    width: 330px;
+    border-radius: 20px 20px 0px 0px;
+}
+
+#r4 #b4 #data2{
+    /* border: 2px solid green; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    padding: 5px 0px;
+}
+
+#r4 #b4 #data2 .name{
+    /* border: 2px solid blue; */
+    font-size: 20px;
+    margin: 0px 0px 0px 10px;
+}
+
+#r4 #b4 #data2 .like{
+    /* border: 2px solid yellow; */
+    margin: 0px 10px 0px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+}
+
+#r5{
+    /* border: 2px solid purple; */
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: row;
+    width: 100vw;
+    padding: 0px 0px 35px 0px;
+}
+
+#r5 #b1{
+    /* border: 2px solid black; */
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px 0px white;
+    transition: 0.9s;
+}
+
+#r5 #b1:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+    box-shadow: 0px 0px 20px 0px white;
+}
+
+#r5 #b1 #data1{
+    /* border: 2px solid red;   */
+    display: flex;
+    justify-content: center;
+    align-items: center;     
+}
+
+#r5 #b1 #data1 img{
+    /* border: 2px solid aqua; */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 230px;
+    width: 330px;
+    border-radius: 20px 20px 0px 0px;
+}
+
+#r5 #b1 #data2{
+    /* border: 2px solid green; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    padding: 5px 0px;
+}
+
+#r5 #b1 #data2 .name{
+    /* border: 2px solid blue; */
+    font-size: 20px;
+    margin: 0px 0px 0px 10px;
+}
+
+#r5 #b1 #data2 .like{
+    /* border: 2px solid yellow; */
+    margin: 0px 10px 0px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+}
+
+#r5 #b2{
+    /* border: 2px solid red;    */
+    background-color: white;
+    border-radius: 20px; 
+    box-shadow: 0px 0px 10px 0px white;
+    transition: 0.9s;
+}
+
+#r5 #b2:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+    box-shadow: 0px 0px 20px 0px white;
+}
+
+#r5 #b2 #data1{
+    /* border: 2px solid black;   */
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+}
+
+#r5 #b2 #data1 img{
+    /* border: 2px solid aqua; */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 230px;
+    width: 330px;
+    border-radius: 20px 20px 0px 0px;
+}
+
+#r5 #b2 #data2{
+    /* border: 2px solid green; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    padding: 5px 0px;
+}
+
+#r5 #b2 #data2 .name{
+    /* border: 2px solid blue; */
+    font-size: 20px;
+    margin: 0px 0px 0px 10px;
+}
+
+#r5 #b2 #data2 .like{
+    /* border: 2px solid yellow; */
+    margin: 0px 10px 0px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+}
+
+#r5 #b3{
+    /* border: 2px solid olive;    */
+    background-color: white;
+    border-radius: 20px; 
+    box-shadow: 0px 0px 10px 0px white;
+    transition: 0.9s;
+}
+
+#r5 #b3:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+    box-shadow: 0px 0px 20px 0px white;
+}
+
+#r5 #b3 #data1{
+    /* border: 2px solid black;   */
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+}
+
+#r5 #b3 #data1 img{
+    /* border: 2px solid aqua; */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 230px;
+    width: 330px;
+    border-radius: 20px 20px 0px 0px;
+}
+
+#r5 #b3 #data2{
+    /* border: 2px solid green; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    padding: 5px 0px;
+}
+
+#r5 #b3 #data2 .name{
+    /* border: 2px solid blue; */
+    font-size: 20px;
+    margin: 0px 0px 0px 10px;
+}
+
+#r5 #b3 #data2 .like{
+    /* border: 2px solid yellow; */
+    margin: 0px 10px 0px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+}
+
+#r5 #b4{
+    /* border: 2px solid lawngreen;   */
+    background-color: white; 
+    border-radius: 20px; 
+    box-shadow: 0px 0px 10px 0px white;
+    transition: 0.9s;
+}
+
+#r5 #b4:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+    box-shadow: 0px 0px 20px 0px white;
+}
+
+#r5 #b4 #data1{
+    /* border: 2px solid black;   */
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+}
+
+#r5 #b4 #data1 img{
+    /* border: 2px solid aqua; */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 230px;
+    width: 330px;
+    border-radius: 20px 20px 0px 0px;
+}
+
+#r5 #b4 #data2{
+    /* border: 2px solid green; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    padding: 5px 0px;
+}
+
+#r5 #b4 #data2 .name{
+    /* border: 2px solid blue; */
+    font-size: 20px;
+    margin: 0px 0px 0px 10px;
+}
+
+#r5 #b4 #data2 .like{
+    /* border: 2px solid yellow; */
+    margin: 0px 10px 0px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+}
+
+#r6{
+    /* border: 2px solid brown; */
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: row;
+    width: 100vw;
+    padding: 0px 0px 35px 0px;
+}  
+
+#r6 #b1{
+    /* border: 2px solid black; */
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px 0px white;
+    transition: 0.9s;
+}
+
+#r6 #b1:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+    box-shadow: 0px 0px 20px 0px white;
+}
+
+#r6 #b1 #data1{
+    /* border: 2px solid red;     */
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+}
+
+#r6 #b1 #data1 img{
+    /* border: 2px solid aqua; */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 230px;
+    width: 330px;
+    border-radius: 20px 20px 0px 0px;
+}
+
+#r6 #b1 #data2{
+    /* border: 2px solid green; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    padding: 5px 0px;
+}
+
+#r6 #b1 #data2 .name{
+    /* border: 2px solid blue; */
+    font-size: 20px;
+    margin: 0px 0px 0px 10px;
+}
+
+#r6 #b1 #data2 .like{
+    /* border: 2px solid yellow; */
+    margin: 0px 10px 0px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+}
+
+#r6 #b2{
+    /* border: 2px solid red;     */
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px 0px white;
+    transition: 0.9s;
+}
+
+#r6 #b2:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+    box-shadow: 0px 0px 20px 0px white;
+}
+
+#r6 #b2 #data1{
+    /* border: 2px solid black;   */
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+}
+
+#r6 #b2 #data1 img{
+    /* border: 2px solid aqua; */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 230px;
+    width: 330px;
+    border-radius: 20px 20px 0px 0px;
+}
+
+#r6 #b2 #data2{
+    /* border: 2px solid green; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    padding: 5px 0px;
+}
+
+#r6 #b2 #data2 .name{
+    /* border: 2px solid blue; */
+    font-size: 20px;
+    margin: 0px 0px 0px 10px;
+}
+
+#r6 #b2 #data2 .like{
+    /* border: 2px solid yellow; */
+    margin: 0px 10px 0px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+}
+
+#r6 #b3{
+    /* border: 2px solid olive;     */
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px 0px white;
+    transition: 0.9s;
+}
+
+#r6 #b3:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+    box-shadow: 0px 0px 20px 0px white;
+}
+
+#r6 #b3 #data1{
+    /* border: 2px solid black;   */
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+}
+
+#r6 #b3 #data1 img{
+    /* border: 2px solid aqua; */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 230px;
+    width: 330px;
+    border-radius: 20px 20px 0px 0px;
+}
+
+#r6 #b3 #data2{
+    /* border: 2px solid green; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    padding: 5px 0px;
+}
+
+#r6 #b3 #data2 .name{
+    /* border: 2px solid blue; */
+    font-size: 20px;
+    margin: 0px 0px 0px 10px;
+}
+
+#r6 #b3 #data2 .like{
+    /* border: 2px solid yellow; */
+    margin: 0px 10px 0px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+}
+
+#r6 #b4{
+    /* border: 2px solid lawngreen;    */
+    background-color: white;
+    border-radius: 20px; 
+    box-shadow: 0px 0px 10px 0px white;
+    transition: 0.9s;
+}
+
+#r6 #b4:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+    box-shadow: 0px 0px 20px 0px white;
+}
+
+#r6 #b4 #data1{
+    /* border: 2px solid black;   */
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+}
+
+#r6 #b4 #data1 img{
+    /* border: 2px solid aqua; */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 230px;
+    width: 330px;
+    border-radius: 20px 20px 0px 0px;
+}
+
+#r6 #b4 #data2{
+    /* border: 2px solid green; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    padding: 5px 0px;
+}
+
+#r6 #b4 #data2 .name{
+    /* border: 2px solid blue; */
+    font-size: 20px;
+    margin: 0px 0px 0px 10px;
+}
+
+#r6 #b4 #data2 .like{
+    /* border: 2px solid yellow; */
+    margin: 0px 10px 0px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+}
+
+#r7{
+    /* border: 2px solid cadetblue; */
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: row;
+    width: 100vw;
+    padding: 0px 0px 35px 0px;
+}
+
+#r7 #b1{
+    /* border: 2px solid black; */
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px 0px white;
+    transition: 0.9s;
+}
+
+#r7 #b1:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+    box-shadow: 0px 0px 20px 0px white;
+}
+
+#r7 #b1 #data1{
+    /* border: 2px solid red;   */
+    display: flex;
+    justify-content: center;
+    align-items: center;     
+}
+
+#r7 #b1 #data1 img{
+    /* border: 2px solid aqua; */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 230px;
+    width: 330px;
+    border-radius: 20px 20px 0px 0px;
+}
+
+#r7 #b1 #data2{
+    /* border: 2px solid green; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    padding: 5px 0px;
+}
+
+#r7 #b1 #data2 .name{
+    /* border: 2px solid blue; */
+    font-size: 20px;
+    margin: 0px 0px 0px 10px;
+}
+
+#r7 #b1 #data2 .like{
+    /* border: 2px solid yellow; */
+    margin: 0px 10px 0px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+}
+
+#r7 #b2{
+    /* border: 2px solid red;     */
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px 0px white;
+    transition: 0.9s;
+}
+
+#r7 #b2:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+    box-shadow: 0px 0px 20px 0px white;
+}
+
+#r7 #b2 #data1{
+    /* border: 2px solid black;   */
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+}
+
+#r7 #b2 #data1 img{
+    /* border: 2px solid aqua; */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 230px;
+    width: 330px;
+    border-radius: 20px 20px 0px 0px;
+}
+
+#r7 #b2 #data2{
+    /* border: 2px solid green; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    padding: 5px 0px;
+}
+
+#r7 #b2 #data2 .name{
+    /* border: 2px solid blue; */
+    font-size: 20px;
+    margin: 0px 0px 0px 10px;
+}
+
+#r7 #b2 #data2 .like{
+    /* border: 2px solid yellow; */
+    margin: 0px 10px 0px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+}
+
+#r7 #b3{
+    /* border: 2px solid olive;    */
+    background-color: white; 
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px 0px white;
+    transition: 0.9s;
+}
+
+#r7 #b3:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+    box-shadow: 0px 0px 20px 0px white;
+}
+
+#r7 #b3 #data1{
+    /* border: 2px solid black;   */
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+}
+
+#r7 #b3 #data1 img{
+    /* border: 2px solid aqua; */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 230px;
+    width: 330px;
+    border-radius: 20px 20px 0px 0px;
+}
+
+#r7 #b3 #data2{
+    /* border: 2px solid green; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    padding: 5px 0px;
+}
+
+#r7 #b3 #data2 .name{
+    /* border: 2px solid blue; */
+    font-size: 20px;
+    margin: 0px 0px 0px 10px;
+}
+
+#r7 #b3 #data2 .like{
+    /* border: 2px solid yellow; */
+    margin: 0px 10px 0px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+}
+
+#r7 #b4{
+    /* border: 2px solid lawngreen;   */
+    background-color: white;
+    border-radius: 20px;  
+    box-shadow: 0px 0px 10px 0px white;
+    transition: 0.9s;
+}
+
+#r7 #b4:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+    box-shadow: 0px 0px 20px 0px white;
+}
+
+#r7 #b4 #data1{
+    /* border: 2px solid black;   */
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+}
+
+#r7 #b4 #data1 img{
+    /* border: 2px solid aqua; */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 230px;
+    width: 330px;
+    border-radius: 20px 20px 0px 0px;
+}
+
+#r7 #b4 #data2{
+    /* border: 2px solid green; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    padding: 5px 0px;
+}
+
+#r7 #b4 #data2 .name{
+    /* border: 2px solid blue; */
+    font-size: 20px;
+    margin: 0px 0px 0px 10px;
+}
+
+#r7 #b4 #data2 .like{
+    /* border: 2px solid yellow; */
+    margin: 0px 10px 0px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+}
+
+#r8{
+    /* border: 2px solid goldenrod; */
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: row;
+    width: 100vw;
+    padding: 0px 0px 35px 0px;
+}
+
+#r8 #b1{
+    /* border: 2px solid black; */
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px 0px white;
+    transition: 0.9s;
+}
+
+#r8 #b1:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+    box-shadow: 0px 0px 20px 0px white;
+}
+
+#r8 #b1 #data1{
+    /* border: 2px solid red;    */
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+}
+
+#r8 #b1 #data1 img{
+    /* border: 2px solid aqua; */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 230px;
+    width: 330px;
+    border-radius: 20px 20px 0px 0px;
+}
+
+#r8 #b1 #data2{
+    /* border: 2px solid green; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    padding: 5px 0px;
+}
+
+#r8 #b1 #data2 .name{
+    /* border: 2px solid blue; */
+    font-size: 20px;
+    margin: 0px 0px 0px 10px;
+}
+
+#r8 #b1 #data2 .like{
+    /* border: 2px solid yellow; */
+    margin: 0px 10px 0px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+}
+
+#r8 #b2{
+    /* border: 2px solid red;     */
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px 0px white;
+    transition: 0.9s;
+}
+
+#r8 #b2:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+    box-shadow: 0px 0px 20px 0px white;
+}
+
+#r8 #b2 #data1{
+    /* border: 2px solid black;   */
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+}
+
+#r8 #b2 #data1 img{
+    /* border: 2px solid aqua; */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 230px;
+    width: 330px;
+    border-radius: 20px 20px 0px 0px;
+}
+
+#r8 #b2 #data2{
+    /* border: 2px solid green; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    padding: 5px 0px;
+}
+
+#r8 #b2 #data2 .name{
+    /* border: 2px solid blue; */
+    font-size: 20px;
+    margin: 0px 0px 0px 10px;
+}
+
+#r8 #b2 #data2 .like{
+    /* border: 2px solid yellow; */
+    margin: 0px 10px 0px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+}
+
+#r8 #b3{
+    /* border: 2px solid olive;     */
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px 0px white;
+    transition: 0.9s;
+}
+
+#r8 #b3:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+    box-shadow: 0px 0px 20px 0px white;
+}
+
+#r8 #b3 #data1{
+    /* border: 2px solid black;   */
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+}
+
+#r8 #b3 #data1 img{
+    /* border: 2px solid aqua; */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 230px;
+    width: 330px;
+    border-radius: 20px 20px 0px 0px;
+}
+
+#r8 #b3 #data2{
+    /* border: 2px solid green; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    padding: 5px 0px;
+}
+
+#r8 #b3 #data2 .name{
+    /* border: 2px solid blue; */
+    font-size: 20px;
+    margin: 0px 0px 0px 10px;
+}
+
+#r8 #b3 #data2 .like{
+    /* border: 2px solid yellow; */
+    margin: 0px 10px 0px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+}
+
+#r8 #b4{
+    /* border: 2px solid lawngreen;  */
+    background-color: white;   
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px 0px white;
+    transition: 0.9s;
+}
+
+#r8 #b4:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+    box-shadow: 0px 0px 20px 0px white;
+}
+
+#r8 #b4 #data1{
+    /* border: 2px solid black;   */
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+}
+
+#r8 #b4 #data1 img{
+    /* border: 2px solid aqua; */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 230px;
+    width: 330px;
+    border-radius: 20px 20px 0px 0px;
+}
+
+#r8 #b4 #data2{
+    /* border: 2px solid green; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    padding: 5px 0px;
+}
+
+#r8 #b4 #data2 .name{
+    /* border: 2px solid blue; */
+    font-size: 20px;
+    margin: 0px 0px 0px 10px;
+}
+
+#r8 #b4 #data2 .like{
+    /* border: 2px solid yellow; */
+    margin: 0px 10px 0px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+}
+
+/* ....................................................................Marquee.................................................................... */
+
+.marquee-container {
+    background: linear-gradient(73.1deg, rgba(99,162,17,1), rgba(34,126,34,1));
+    overflow: hidden;
+    white-space: nowrap;
+    position: relative;
+    margin: 50px 0px;
+    display: flex;
+    cursor: pointer;
+}
+
+.marquee-content {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    white-space: nowrap;
+    animation: marquee 40s linear infinite;
+}
+
+.marquee-group {
+    display: flex;
+    align-items: center;
+}
+
+.marquee-group div {
+    display: flex;
+    align-items: left;
+    justify-content: center;
+    flex-direction: column;
+    margin: 10px 10px;
+}
+
+.marquee-group span {
+    padding-left: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 3px;
+}
+
+.marquee-group img {
+    padding: 10px 5px 5px 0px;
+    height: 200px;
+    display: inline-block;
+    border-radius: 30px;
+}
+
+.marquee-container:hover .marquee-content {
+    animation-play-state: paused;
+    transition: transform 0.9s ease-out;
+}
+
+@keyframes marquee {
+    from {
+        transform: translateX(0%);
+    }
+    to {
+        transform: translateX(-50%);
+    }
+}
+
+/* ................................................................................................................................................. */
+
+footer{
+    border: none;
+    background-color: rgb(234, 234, 234);
+    color: rgb(82, 82, 82);
+    text-align: justify;
+    padding: 40px;
+}
+
+footer span{
+    color: rgb(100, 100, 100);
+    font-size: 25px;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+footer p{
+    /* border: 2px solid black; */
+    font-size: 25px;
+    font-weight: bold;
+}

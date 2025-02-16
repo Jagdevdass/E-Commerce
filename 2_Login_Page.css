@@ -1,0 +1,270 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Birthstone&family=Eagle+Lake&family=Fascinate+Inline&family=Kaushan+Script&family=Lavishly+Yours&family=Lilita+One&family=Lugrasimo&family=Macondo&family=Monsieur+La+Doulaise&family=Oleo+Script:wght@400;700&family=Passion+One:wght@400;700;900&family=Passions+Conflict&family=Titan+One&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap'); */
+
+@import url('https://fonts.googleapis.com/css2?family=Aclonica&family=Birthstone&family=Eagle+Lake&family=Fascinate+Inline&family=Kaushan+Script&family=Lavishly+Yours&family=Lilita+One&family=Lugrasimo&family=Macondo&family=Monsieur+La+Doulaise&family=Oleo+Script:wght@400;700&family=Passion+One:wght@400;700;900&family=Passions+Conflict&family=Titan+One&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Aclonica&family=Birthstone&family=Eagle+Lake&family=Fascinate+Inline&family=Kaushan+Script&family=Lavishly+Yours&family=Lilita+One&family=Lugrasimo&family=Macondo&family=Monsieur+La+Doulaise&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Oleo+Script:wght@400;700&family=Passion+One:wght@400;700;900&family=Passions+Conflict&family=Titan+One&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+*{
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+
+#main{
+
+    /* background: linear-gradient(to right, #4C75F2, #1E50E5); */
+
+    background-image: radial-gradient( circle 950px at 2.5% 8%,  #0088ff 0%, rgba(35,56,136,1) 90% );
+
+
+    border: none;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+}
+
+#cont1{
+    font-family: "Nunito", serif;
+    background-color: white;
+    color: white;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 20px 0px;
+}
+
+#data{
+    /* border: 2px solid green; */
+    padding: 30px ;
+    border-radius: 20px;
+    box-shadow: 0px 0px 15px 0px;
+}
+
+h1{
+    font-family: "Aclonica", serif;
+    color: black;
+    /* border: 2px solid wheat; */
+    /* font-family: "Fascinate Inline", serif; */
+    /* font-size: 50px; */
+    margin-top: 35px;
+    margin-bottom: 15px;
+}
+
+.d0{
+    /* border: 4px solid salmon; */
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    flex-direction: row;
+    /* font-size: 20px; */
+    margin-bottom: 30px;
+}
+
+.d0 a{
+    /* border: 2px solid yellowgreen; */
+    margin-left: 3px;
+    /* float: left; */
+}
+
+.d1{
+    /* border: 4px solid gold; */
+    color: black;
+    display: flex;
+    align-items: left;
+    justify-content: center;
+    flex-direction: column;
+    /* float: left; */
+    margin: 35px 0px;
+}
+
+.d1 input{
+    /* border: 2px solid black; */
+    font-size: 20px;
+    width: 450px;
+}
+
+.d1 label{
+    font-weight: bold;
+}
+
+.d2{
+    /* border: 4px solid salmon; */
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    /* font-size: 20px; */
+    /* margin: 20px 0px 20px 0px; */
+}
+
+/* ...................................................................................... */
+
+
+.d3 input{
+    /* border: 2px solid darkcyan; */
+    width: 447px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    
+}
+
+/* For eye.. */
+
+.d3 i{
+    /* border: 2px solid orange; */
+    background-color: rgb(237, 237, 237);
+    color: #0088ff;
+    padding: 10px 9px 9px 9px;
+    position: absolute;
+    top: 424px;
+    left: 603.5px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    
+}
+
+/* ...................................................................................... */
+.d4{
+    /* border: 4px solid olive; */
+    display: flex;
+    align-items: left;
+    justify-content: center;
+    flex-direction: column;
+    margin: 35px 0px;
+}
+
+.d4 input{
+    font-size: 20px;
+}
+
+.d4 label{
+    font-weight: bold;
+}
+
+.d5{
+    /* border: 4px solid salmon; */
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    flex-direction: row;
+    /* font-size: 20px; */
+    margin: 35px 0px;
+}
+
+/* .........................................................................For customize check box......................................................................... */
+
+.d5 input[type = "checkbox"]{
+    /* border: 1px solid grey; */
+    border: none;
+    appearance: none;
+    -webkit-appearance: none;
+    height: 25px;
+    width: 25px;
+    background-color: #d5d5d5;
+    border-radius: 100px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    flex-direction: row;
+    padding: 5px;
+}
+
+.d5 input[type = "checkbox"]:after{
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f00c";
+    font-size: 15px;
+    color: white;
+    display: none;
+}
+
+.d5 input[type = "checkbox"]:hover{
+    background-color: #a5a5a5;
+}
+
+.d5 input[type = "checkbox"]:checked{
+    background-color: #0088ff;
+}
+
+.d5 input[type = "checkbox"]:checked:after{
+    display: block;
+}
+
+/* ......................................................................................................................................................................... */
+
+.d5 label{
+    /* border: 2px solid greenyellow; */
+    margin-left: 4px;
+    /* font-size: 20px; */
+    font-size: 20px;
+}
+/* .......................................................................... */
+input{
+    /* border: 2px solid orchid; */
+    font-family: "Nunito", serif;
+    background-color: rgb(237, 237, 237);
+    font-size: 25px;
+    padding: 10px 0px 10px 10px;
+    border-radius: 0px;
+    margin: 2px 0px;
+    border: none;
+    border-top: none;
+    border-left: 4px solid #0088ff;
+    border-right: none;
+    /* border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px; */
+}
+/* .......................................................................... */
+
+a{
+    /* border: 2px solid salmon; */
+    color: #0088ff;
+    font-weight: bold;
+    /* font-size: 20px; */
+}
+
+a:active{
+    color: red;
+}
+
+button{
+    border: none;
+    background-color: #0088ff;
+    color: white;
+    font-size: 20px;
+    width: 450px;
+    padding: 15px;
+    border-radius: 15px;
+    margin-bottom: 35px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    transition: 0.9s;
+}
+
+button:hover{
+    border: none;
+    cursor: pointer;
+    background-color: white;
+    color: #0088ff;
+    transform: scale(1.05);
+    box-shadow: 0px 0px 5px 0px;
+
+}
+
+#img{
+    /* border: 2px solid paleturquoise; */
+    height: 619px;
+    width: 647px;
+    margin-left: 30px;
+}

@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home page..</title>
+</head>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=search" />
+
+<link rel="stylesheet" href="/static/1_Home_Page.css">
+
+<body>
+    <div id="main">
+        <div id="nav">
+            <div class="animate__animated animate__backInDown">
+                <div id="logo">
+                    <div class="animate__animated animate__pulse animate__infinite animate__slow">
+                        Style 
+                    <span>
+                        Kart
+                    </span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="animate__animated animate__bounceInRight animate__slow">
+                <div id="srch">
+                    <span class="material-symbols-outlined" id="searchIcon">
+                        search
+                    </span>
+                    <input type="text" id="searchBox" placeholder="Search for Products, Brands and More">
+                </div>
+            </div>
+
+            <div id="detail">
+                <a href="{{ url_for('login') }}" class="login-button" target="_blank">
+                    <div class="animate__animated animate__rotateIn animate__slow">
+                        <div id="login">
+                            <div class="logo1">
+                                <i class="fa-regular fa-user"></i>
+                            </div>
+                            Login
+                        </div>
+                    </div>
+                </a>
+                <!-- <a href="{{ url_for('cart') }}">Go to Cart</a> -->
+                <a href="{{ url_for('cart') }}" class="login-button" target="_blank">
+                    <div class="animate__animated animate__rotateIn animate__slow">
+                        <div id="cart">
+                            <div class="logo2">
+                                <span class="material-icons">shopping_cart</span>
+                            </div>
+                            Cart
+                        </div>
+                    </div>
+                </a>
+                <a href="#" target="_blank">
+                    <div class="animate__animated animate__rotateIn animate__slow">
+                        <div id="sell">
+                            <div class="logo3">
+                                <span class="material-icons">storefront</span>
+                            </div>
+                            Become a Seller
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <div id="banner">
+            <a href="#" target="_blank">
+                <div id="kilo">
+                    <img src="/static/Images/Surf.jpg" alt="Error..">
+                    <span>Kilos</span>
+                </div>
+            </a>
+
+            <a href="#" target="_blank">
+                <div id="mobile">
+                    <img src="/static/Images/Mobile.webp" alt="Error..">
+                    <span>Mobiles</span>                
+                </div>
+            </a>
+
+            <a href="#" target="_blank">
+                <div id="fashion">
+                    <img src="/static/Images/Fashion.jpg" alt="Error..">
+                    <span>Fashion</span>
+                </div>
+            </a>
+
+            <a href="#" target="_blank">
+                <div id="electronics">
+                    <img src="/static/Images/Electronics.jpg" alt="Error..">
+                    <span>Electronics</span>
+                </div>
+            </a>
+
+            <a href="#" target="_blank">
+                <div id="home">
+                    <img src="/static/Images/Home.jpg" alt="Error..">
+                    <span>Furniture</span>
+                </div>
+            </a>
+
+            <a href="#" target="_blank">
+                <div id="appliances">
+                    <img src="/static/Images/Appliances.jpg" alt="Error..">
+                    <span>Appliances</span>
+                </div>
+            </a>
+
+            <a href="#" target="_blank">
+                <div id="flight">
+                    <img src="/static/Images/Aeroplane.jpg" alt="Error..">
+                    <span>Flight Booking</span>
+                </div>
+            </a>
+
+            <a href="#" target="_blank">
+                <div id="toys">
+                    <img src="/static/Images/Toys.jpg" alt="Error..">
+                    <span>Toys</span>
+                </div>
+            </a>
+
+            <a href="#" target="_blank">
+                <div id="bike">
+                    <img src="/static/Images/Bike.jpg" alt="Error..">
+                    <span>Two Wheelers</span>
+                </div>
+            </a>
+        </div>
+
+        <div class="marquee-container">
+            <div class="marquee-content">
+                <img src="/static/Images/Banner-1.webp" alt="Error..">
+                <img src="/static/Images/Banner-2.jpg" alt="Error..">
+                <img src="/static/Images/Banner-3.jpg" alt="Error..">
+                <img src="/static/Images/Banner-4.jpg" alt="Error..">
+                <img src="/static/Images/Banner-5.jpg" alt="Error..">
+    
+                <!-- Duplicate images to create a seamless loop -->
+                <img src="/static/Images/Banner-1.webp" alt="Error..">
+                <img src="/static/Images/Banner-2.jpg" alt="Error..">
+                <img src="/static/Images/Banner-3.jpg" alt="Error..">
+                <img src="/static/Images/Banner-4.jpg" alt="Error..">
+                <img src="/static/Images/Banner-5.jpg" alt="Error..">
+            </div>
+        </div>
+
+        <div id="container1">
+            Best of Electronics..
+        </div>
+
+        <div id="container2">
+            <div class="c1">
+                <div class="i1">
+                    <img src="/static/Images/Monitor.jpg" alt="Error..">
+                    <div class="info1">
+                        Monitors<br>
+                        <b>From $115.24</b>
+                    </div>
+                </div>
+
+                <div class="i2">
+                    <img src="/static/Images/Printer.avif" alt="Error..">
+                    <div class="info2">
+                        Printers<br>
+                        <b>From $46.09</b>
+                    </div>
+                </div>
+
+                <div class="i3">
+                    <img src="/static/Images/Shavers.webp" alt="Error..">
+                    <div class="info3">
+                        Monitor<br>
+                        <b>From $115.24</b>
+                    </div>
+                </div>
+
+                <div class="i4">
+                    <img src="/static/Images/Projectors.webp" alt="Error..">
+                    <div class="info4">
+                        Monitor<br>
+                        <b>From $115.24</b>
+                    </div>
+                </div>
+
+                <div class="i5">
+                    <img src="/static/Images/Monitor1.jpg" alt="Error..">
+                    <div class="info5">
+                        Monitor<br>
+                        <b>From $115.24</b>
+                    </div>
+                </div>
+            </div>
+            <div class="c2">
+                <div class="box">
+                    <div class="b1">
+                        <img src="/static/Images/lg.jpg" alt="Error..">
+                        <b>LG</b>
+                    </div>
+
+                    <div class="b2">
+                        <img src="/static/Images/Cricketer.jpg" alt="Error..">
+                    </div>
+
+                    <div class="b3">
+                        Experience<br>
+                        Stadium-like viewing<br>
+                        <b>From $96.04/M*</b>
+                    </div>
+
+                    <div class="b4">
+                        *T&C Apply
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="container3">
+            Best of Toys..
+        </div>
+
+        <div id="container4">
+            <div class="i6">
+                <img src="/static/Images/Teddy.jpg" alt="Error..">
+                <div class="info6">
+                    Teddy Bear<br>
+                    <b>Upto 70% Off</b>
+                </div>
+            </div>
+
+            <div class="i7">
+                <img src="/static/Images/Cycle.jpg" alt="Error..">
+                <div class="info7">
+                    Cycles<br>
+                    <b>Upto 70% Off</b>
+                </div>
+            </div>
+
+            <div class="i8">
+                <img src="/static/Images/Cars.jpg" alt="Error..">
+                <div class="info8">
+                    RC-Cars<br>
+                    <b>Upto 40% Off</b>
+                </div>
+            </div>
+
+            <div class="i9">
+                <img src="/static/Images/Robots.jpg" alt="Error..">
+                <div class="info9">
+                    Robots<br>
+                    <b>Upto 20% Off</b>
+                </div>
+            </div>
+
+            <div class="i10">
+                <img src="/static/Images/Lego.jpg" alt="Error..">
+                <div class="info10">
+                    Legos<br>
+                    <b>Upto 50% Off</b>
+                </div>
+            </div>
+
+            <div class="i11">
+                <img src="/static/Images/Balls.jpg" alt="Error..">
+                <div class="info11">
+                    Balls<br>
+                    <b>Upto 20% Off</b>
+                </div>
+            </div>
+        </div>
+
+        <div id="container5">
+            Best of Valentine..
+        </div>
+
+        <div id="container6">
+            <div class="cont1">
+                <div class="i12">
+                    <img src="/static/Images/Shirt.jpg" alt="Error..">
+                    <div class="info12">
+                        Shirts<br>
+                        <span>
+                            Min. 50% Off
+                        </span>
+                    </div>
+                </div>
+
+                <div class="i13">
+                    <img src="/static/Images/Watches.jpg" alt="Error..">
+                    <div class="info13">
+                        Balls<br>
+                        <span>
+                            Min. 40% Off
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="cont2">
+                <div class="data">
+                    <span>
+                        Top Selling Smartphones
+                    </span><br>
+                    Latest Technology, Best Brands
+                </div>
+
+                <div class="img">
+                    <img src="/static/Images/Mobiles.webp" alt="Error..">
+                </div>
+            </div>
+        </div>
+
+        <div id="container7">
+            <p>
+                The Brand Directory for Style Kart is an extensive collection of premium, budget-friendly, and trending brands, offering customers a diverse shopping experience across multiple categories.
+            </p><br>
+
+            <b>Electronics & Gadgets</b>
+            <p>
+                Technology lovers can explore top brands such as Apple, Samsung, OnePlus, Xiaomi, Sony, HP, Dell, Lenovo, Acer, Intel, AMD, Logitech, Boat, JBL, Realme, and Noise for the latest in smartphones, laptops, audio accessories, and smart devices. Whether it's a high-end MacBook, a power-packed Asus gaming laptop, or crystal-clear sound from Sony headphones, our tech section has it all.
+            </p><br>
+
+            <b>Fashion & Clothing</b>
+            <p>
+                From street style to luxury fashion, Style Kart features brands like Nike, Adidas, Puma, Reebok, Levi's, Wrangler, Pepe Jeans, Lee, Louis Vuitton, Gucci, Prada, H&M, Zara, Allen Solly, Raymond, Van Heusen, and Tommy Hilfiger. Whether you're looking for trendy casual wear, formal suits, ethnic outfits, or high-end accessories, our collection suits every fashion enthusiast.
+            </p><br>
+
+            <b>Beauty & Personal Care</b>
+            <p>
+                Pamper yourself with a wide range of skincare, haircare, and makeup brands like Lakmé, Maybelline, L'Oréal, Garnier, MAC, Revlon, Bobbi Brown, The Body Shop, Forest Essentials, Biotique, Nykaa, Sugar Cosmetics, Nivea, Dove, Beardo, Ustraa, and Gillette. From luxury perfumes to organic skincare, our directory ensures quality beauty products for men and women.
+            </p><br>
+
+            <b>Home & Kitchen Essentials</b>
+            <p>
+                Upgrade your home with high-end kitchen and home appliance brands like Prestige, Philips, LG, Whirlpool, Eureka Forbes, Kent, Pigeon, Bajaj, Usha, Hawkins, Morphy Richards, Havells, Bosch, Syska, and Wipro. From modular kitchen tools to smart home lighting, find everything to transform your home into a modern living space.
+            </p><br>
+
+            <b>Footwear & Accessories</b>
+            <p>
+                Step out in style with brands like Bata, Woodland, Skechers, Crocs, Liberty, Red Tape, Aldo, Metro, Mochi, Steve Madden, Clarks, Titan, Fastrack, Fossil, Casio, Wildcraft, American Tourister, and Samsonite. From trendy sneakers and formal shoes to stylish watches and travel gear, we bring top-notch accessories for every occasion.
+            </p><br>
+
+            <b>Kids & Baby Care</b>
+            <p>
+                For the little ones, we have brands like Pampers, Huggies, Johnson's Baby, Chicco, Mothercare, Fisher-Price, Lego, Hot Wheels, Funskool, Barbie, Disney, FirstCry, and Mee Mee. Whether it's gentle skincare, safe baby food, or engaging educational toys, parents can trust our selection for their children's needs.
+            </p><br>
+
+            <b>Grocery & Daily Essentials</b>
+            <p>
+                Stock up on your everyday needs with grocery brands like Nestlé, Amul, Tata Tea, Nescafé, Aashirvaad, Fortune, Dettol, Lifebuoy, Maggi, Kissan, Britannia, Parle, Cadbury, Hershey's, Dabur, Patanjali, and Kellogg's. From fresh snacks to healthy food options, our grocery section makes daily shopping effortless.
+            </p><br>
+
+            <b>Books & Stationery</b>
+            <p>
+                For book lovers and students, our collection includes publications and brands like Penguin, HarperCollins, Oxford, Classmate, Navneet, Parker, Cello, Kindle, Kobo, Camlin, Faber-Castell, and Staedtler. Whether you're looking for bestsellers, academic books, or premium stationery, we have the perfect collection.
+            </p><br>
+
+            <b>Sports & Fitness</b>
+            <p>
+                Stay fit and active with brands like Decathlon, Yonex, Nivia, Cosco, Gold's Gym, Adidas, Under Armour, Fitbit, Garmin, Nike, Reebok, and MuscleBlaze. From workout gear and fitness trackers to professional sports equipment, our directory caters to fitness enthusiasts and athletes alike.
+            </p><br>
+
+            <b>Automotive & Accessories</b>
+            <p>
+                For automobile lovers, we offer trusted brands like Hero, Honda, Yamaha, Castrol, Mobil, Michelin, MRF, CEAT, Bosch, Philips, 3M, Turtle Wax, and Hella. Whether it's bike accessories, car care kits, or premium lubricants, our directory ensures quality products for vehicle maintenance.
+            </p><br>
+
+            <p>
+                At Style Kart, we bring the best brands under one roof, ensuring a seamless and enjoyable shopping experience. Whether you're looking for the latest fashion, high-tech gadgets, or daily essentials, we've got you covered with top-rated, reliable brands.
+            </p>
+        </div>
+
+        <footer>
+            <div id="logo" class="animate__animated animate__pulse animate__infinite animate__slow"></div>
+            <div class="details">
+                <a href="https://www.instagram.com" target="_blank">
+                    <div class="instagram"></div>
+                </a>
+                <a href="https://www.facebook.com" target="_blank">
+                    <div class="facebook"></div>
+                </a>
+                <a href="https://www.twitter.com" target="_blank">
+                    <div class="twitter"></div>
+                </a>
+                <a href="https://www.linkedin.com" target="_blank">
+                    <div class="linkedin"></div>
+                </a>
+            </div>
+            <p>
+                &copy; 2024 Explore India. All rights reserved.
+            </p>
+        </footer>
+    </div>
+
+    <script src="/static/1_Home_Page.js"></script>
+    
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup..</title>
+    <link rel="stylesheet" href="/static/4_Signup_Page.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+</head>
+
+<body>
+    <div id="main">
+        <div id="box">
+            <div id="d1">
+                <img src="/static/Images/Swimming.webp" alt="Error..">
+            </div>
+
+            <div id="d2">
+                <div id="c1">
+                    Welcome..
+                </div>
+                <div id="c2">
+                    <div class="data1">
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" placeholder="Enter name..">
+                    </div>
+                    <div class="data2">
+                        <label for="mail">Email</label>
+                        <input type="email" id="mail" placeholder="Enter email..">
+                    </div>
+                    <div class="data3">
+                        <label for="pswrd">Password</label>
+                        <input type="password" id="pswrd" placeholder="Enter password..">
+                    </div>
+                </div>
+                <div id="c3">
+                    <button id="signupBtn">
+                        Create Account
+                    </button>
+                </div>
+                <div id="c4">
+                    Already have an account? 
+                    <a href="{{ url_for('login') }}" target="_blank">
+                        Log in
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div id="box2" class="animate__animated animate__pulse animate__infinite animate__slow">
+            <span>SIGNUP</span> <br>
+            UI CONCEPT
+        </div>
+
+        <div id="box3" class="animate__animated animate__backInRight animate__slower"></div>
+
+        <div id="box4" class="animate__animated animate__bounceInUp animate__slower"></div>
+    </div>
+
+    <script src="/static/4_Signup_Page.js"></script>
+</body>
+</html>
